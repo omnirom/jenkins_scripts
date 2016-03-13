@@ -16,7 +16,7 @@ export BUILD_WITH_COLORS=0
 
 DEVICE=$*
 
-if [ -n $DEVICE ]; then
+if [ -z $DEVICE ]; then
     echo DEVICE not set
     exit 1
 fi
